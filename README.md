@@ -44,9 +44,9 @@ To remove the pepper noise from the image, I apply a Gaussian blur and create a
 threshold that masks the original image. This approachis relatively successful
 in most cases.
 
-|                       Original image                        |                       Denoised image                        |
-| :---------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="figures/denoise_example_original.png" height=140> | <img src="figures/denoise_example_denoised.png" height=140> |
+|                    Original image                    |                    Denoised image                    |
+| :--------------------------------------------------: | :--------------------------------------------------: |
+| ![Predictions](figures/denoise_example_original.png) | ![Predictions](figures/denoise_example_denoised.png) |
 
 *Step 2: Separating contours*
 
@@ -62,16 +62,16 @@ involves the splitting, padding, and normalization of images. The outcome is a
 set of four images that - in most cases - look similar to the images that the
 CNN was trained on.
 
-|                       Seperated images                       |                       Cleaned images                       |
-| :----------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="figures/denoise_example_seperated.png" height=180> | <img src="figures/denoise_example_cleaned.png" height=180> |
+|                   Seperated images                    |                   Cleaned images                    |
+| :---------------------------------------------------: | :-------------------------------------------------: |
+| ![Predictions](figures/denoise_example_seperated.png) | ![Predictions](figures/denoise_example_cleaned.png) |
 
 *Step 4: Predicting images*
 I then let the CNN predict the four images. I consider the five most probable
 predictions by the model. The correct label is among the top five predictions
 for 68.0% of the "corrupted" images.
 
-![Example images](figures/denoise_example_prediction.png)
+![Predictions](figures/denoise_example_prediction.png)
 
 
 ## References
