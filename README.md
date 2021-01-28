@@ -64,13 +64,13 @@ CNN was trained on.
 
 |                       Seperated images                       |                       Cleaned images                       |
 | :----------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="figures/denoise_example_seperated.png" height=150> | <img src="figures/denoise_example_cleaned.png" height=150> |
+| <img src="figures/denoise_example_seperated.png" height=200> | <img src="figures/denoise_example_cleaned.png" height=200> |
 
 *Step 4: Predicting images*
 I then let the CNN predict the four images. I consider the five most probable
 predictions by the model. The correct label is among the top five predictions
 for 68.0% of the "corrupted" images.
-<div style="text-align:center"><img src="figures/denoise_example_prediction.png" width=500></div>
+![Example images](figures/denoise_example_prediction.png)
 
 
 ## References
