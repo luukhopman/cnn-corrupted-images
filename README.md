@@ -46,7 +46,7 @@ in most cases.
 
 |                       Original image                        |                       Denoised image                        |
 | :---------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="figures/denoise_example_original.png" height=150> | <img src="figures/denoise_example_denoised.png" height=150> |
+| <img src="figures/denoise_example_original.png" height=140> | <img src="figures/denoise_example_denoised.png" height=140> |
 
 *Step 2: Separating contours*
 
@@ -64,12 +64,13 @@ CNN was trained on.
 
 |                       Seperated images                       |                       Cleaned images                       |
 | :----------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="figures/denoise_example_seperated.png" height=200> | <img src="figures/denoise_example_cleaned.png" height=200> |
+| <img src="figures/denoise_example_seperated.png" height=180> | <img src="figures/denoise_example_cleaned.png" height=180> |
 
 *Step 4: Predicting images*
 I then let the CNN predict the four images. I consider the five most probable
 predictions by the model. The correct label is among the top five predictions
 for 68.0% of the "corrupted" images.
+
 ![Example images](figures/denoise_example_prediction.png)
 
 
