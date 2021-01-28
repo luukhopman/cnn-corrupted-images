@@ -36,7 +36,7 @@ The trained CNN model achieves a test accuracy of 95.06%.
 ![Wrong predictions](figures/cnn_wrong_predictions.png)
 Figure 2: Random examples of misclassified letters. (prediction in blue)
 
-## Denoising Images (`notebooks/predicting_images`.)
+## Denoising Images (`notebooks/predicting_images`)
 
 *Step 1: Removing the noise*
 
@@ -46,7 +46,8 @@ in most cases.
 
 |                       Original image                        |                       Denoised image                        |
 | :---------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="figures/denoise_example_original.png" height=100> | <img src="figures/denoise_example_denoised.png" height=100> |
+| <img src="figures/denoise_example_original.png" height=150> | <img src="figures/denoise_example_denoised.png" height=150> |
+
 *Step 2: Separating contours*
 
 The biggest challenge is to separate the four individual letters in the image.
@@ -63,7 +64,7 @@ CNN was trained on.
 
 |                       Seperated images                       |                       Cleaned images                       |
 | :----------------------------------------------------------: | :--------------------------------------------------------: |
-| <img src="figures/denoise_example_seperated.png" height=100> | <img src="figures/denoise_example_cleaned.png" height=100> |
+| <img src="figures/denoise_example_seperated.png" height=150> | <img src="figures/denoise_example_cleaned.png" height=150> |
 
 *Step 4: Predicting images*
 I then let the CNN predict the four images. I consider the five most probable
